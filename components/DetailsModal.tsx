@@ -153,6 +153,7 @@ export default function TaskDetailsModal({
               </TouchableOpacity>
             </View>
 
+            {/* Close button */}
             <TouchableOpacity
               onPress={onClose}
               className="absolute left-5 top-5"
@@ -182,7 +183,7 @@ export default function TaskDetailsModal({
               <TouchableOpacity
                 onPress={() => onToggleComplete(task.name)}
                 className={`${
-                  task.completed ? "bg-red-700" : "bg-green-400"
+                  task.completed ? "bg-sky-700" : "bg-green-400"
                 }  rounded-lg p-4 `}
               >
                 <Text className="text-white font-semibold text-center">

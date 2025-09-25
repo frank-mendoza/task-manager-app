@@ -26,7 +26,7 @@ export default function CustomToast({ toastProps, onHide }: Props) {
     <Animated.View
       style={{
         position: "absolute",
-        top: 10,
+        bottom: 60,
         alignSelf: "center",
         backgroundColor: "#edffc3",
         paddingHorizontal: 20,

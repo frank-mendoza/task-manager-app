@@ -21,6 +21,18 @@ export default function TaskList() {
     setTasks((prev) =>
       prev.map((t) => (t.name === name ? { ...t, completed: !t.completed } : t))
     );
+
+    if (!selectedTask?.completed) {
+      setToastProps({
+        message: `🎉 ${name} marked complete!`,
+        visible: true,
+      });
+    } else {
+      setToastProps({
+        message: `🎉 ${name} marked incomplete!`,
+        visible: true,
+      });
+    }
     setSelectedTask(null);
   };
 
@@ -35,7 +47,6 @@ export default function TaskList() {
     }, 800);
   };
 
-  const endText = "No task available";
   return (
     <View className="flex-1 bg-gray-50 px-6 pt-6 relative">
       <Text className="text-xl font-bold text-gray-900 mb-4">My Tasks</Text>
@@ -54,7 +65,7 @@ export default function TaskList() {
           <View className="flex-1 justify-center items-center py-10  h-full">
             <Text className="text-gray-400 mb-4">No tasks yet</Text>
             <TouchableOpacity
-              onPress={() => setShowCreateModal(true)} // 👈 or whatever opens your modal
+              onPress={() => setShowCreateModal(true)}
               className="bg-[#ffe678] px-6 py-3 rounded-xl"
             >
               <Text className="text-black font-semibold">Add New Task</Text>
