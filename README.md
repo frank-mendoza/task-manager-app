@@ -1,8 +1,8 @@
-📝 Task Manager App
+# 📝 Task Manager App
 
 A simple Task Manager App built with Expo + React Native.
 
-📦 What You Can Do
+# 📦 What You Can Do
 
 ➕ Create Tasks
 Add tasks with a name and description.
@@ -20,7 +20,7 @@ Remove tasks permanently with confirmation.
 🎨 Clean UI
 Tailwind-powered styles with badges, modals, and toast-like alerts.
 
-🚀 Quick Start
+# 🚀 Quick Start
 
 Clone the repo
 
@@ -45,7 +45,7 @@ Use the Expo Go app (iOS/Android) to scan the QR code
 
 Or run on emulator/simulator
 
-🛠️ Tools Used
+# 🛠️ Tools Used
 
 Expo
 – Framework for building React Native apps
@@ -64,4 +64,3 @@ React Native Safe Area Context
 
 @expo/vector-icons
 – Icon library (Ionicons)
-# task-manager-app
