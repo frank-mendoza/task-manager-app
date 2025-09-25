@@ -1,4 +1,4 @@
-import CreateModal from "@/components/CreateMdal";
+import CreateModal from "@/components/CreateModal";
 import CustomToast from "@/components/CustomToast";
 import TaskDetailsModal from "@/components/DetailsModal";
 import RenderItem from "@/components/RenderItem";
