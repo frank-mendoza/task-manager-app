@@ -63,7 +63,7 @@ export default function CreateModal({
     >
       <View className="flex-1 bg-black/50 justify-center items-center">
         <View className="bg-white w-11/12 rounded-2xl p-6 shadow-lg">
-          <Text className="text-xl font-bold text-gray-900 my-6">
+          <Text className="text-xl font-bold text-gray-900 mt-0 mb-6">
             Create Task
           </Text>
 
@@ -93,9 +93,9 @@ export default function CreateModal({
 
           <TouchableOpacity
             onPressIn={addTask}
-            className="bg-green-400 rounded-lg py-4 my-3"
+            className="bg-[#ffe678] rounded-lg py-4 my-3"
           >
-            <Text className="text-white font-semibold text-center">
+            <Text className="text-gray-700 font-semibold text-center">
               Create task
             </Text>
           </TouchableOpacity>

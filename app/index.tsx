@@ -51,7 +51,15 @@ export default function TaskList() {
         )}
         showsVerticalScrollIndicator={false}
         ListEmptyComponent={
-          <Text className="text-center text-gray-400 py-4">{endText}</Text>
+          <View className="flex-1 justify-center items-center py-10  h-full">
+            <Text className="text-gray-400 mb-4">No tasks yet</Text>
+            <TouchableOpacity
+              onPress={() => setShowCreateModal(true)} // 👈 or whatever opens your modal
+              className="bg-[#ffe678] px-6 py-3 rounded-xl"
+            >
+              <Text className="text-black font-semibold">Add New Task</Text>
+            </TouchableOpacity>
+          </View>
         }
         contentContainerStyle={{
           gap: 12,
@@ -60,12 +68,14 @@ export default function TaskList() {
       />
 
       {/* Floating Add Button */}
-      <TouchableOpacity
-        onPress={() => setShowCreateModal(true)}
-        className="absolute bottom-20 mb-5 right-6 bg-[#ffe678] rounded-full p-4 shadow-lg"
-      >
-        <Ionicons name="add" size={28} color="#151312" />
-      </TouchableOpacity>
+      {tasks.length > 0 && (
+        <TouchableOpacity
+          onPress={() => setShowCreateModal(true)}
+          className="absolute bottom-20 mb-5 right-6 bg-[#ffe678] rounded-full p-4 shadow-lg"
+        >
+          <Ionicons name="add" size={28} color="#151312" />
+        </TouchableOpacity>
+      )}
 
       {/* MODALS */}
 
