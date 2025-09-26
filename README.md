@@ -20,6 +20,18 @@ Remove tasks permanently with confirmation.
 🎨 Clean UI
 Tailwind-powered styles with badges, modals, and toast-like alerts.
 
+## Environment Setup
+
+This project requires **Node.js `20.19.4`**.  
+To ensure the correct version, we use **`.nvmrc`**.
+
+1. Install [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm)
+2. Run the following commands in your project root:
+
+//bash
+nvm install
+nvm use
+
 # 🚀 Quick Start
 
 Clone the repo
@@ -64,3 +76,7 @@ React Native Safe Area Context
 
 @expo/vector-icons
 – Icon library (Ionicons)
+
+```
+
+```

@@ -166,6 +166,7 @@ export default function TaskDetailsModal({
                 isEdit ? "justify-between" : "justify-end"
               } items-center gap-4`}
             >
+              {/* reset button */}
               {isEdit && (
                 <TouchableOpacity
                   onPressIn={() => {
@@ -180,6 +181,7 @@ export default function TaskDetailsModal({
                   </Text>
                 </TouchableOpacity>
               )}
+
               <TouchableOpacity
                 onPress={() => onToggleComplete(task.name)}
                 className={`${
